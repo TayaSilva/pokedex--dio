@@ -1,141 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    
-    <!--Normalize Css, pra tirar as configurações padrões do navegador-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--Font Roboto-->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <!--Import do Css-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
-
-    
-    
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
 </head>
+
 <body>
-   <section class="content">
-    <h1>Pokedex</h1>
+    <section class="content">
+        <h1>Pokedex</h1>
 
-    <ol class="pokemons">
-        <li class="pokemon">
-            <span class="number">#001</span>
-            <span class="name">Bulbasaur</span>
+        <ol id="pokemonList" class="pokemons">
+            <!-- ..... Pokemons here ..... -->
+        </ol>
 
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </section>
 
-            <div class="detail">
-                <ol class="types">
-                    <li class="type">Grama</li>
-                    <li class="type">Poder</li>
-                </ol>
-
-
-            <img src="./assets/fotos/bulbasaur-logo-8A27924C02-seeklogo.com.png">
-            </div>
-        </li>
-        
-        <li class="pokemon">
-            <span class="number">#002</span>
-            <span class="name">Ivysaur</span>
-    
-    
-            <div class="detail">
-                <ol class="types">
-                        <li class="type">Grama</li>
-                        <li class="type">Poder</li>
-                </ol>
-    
-    
-                <img src="./assets/fotos/ivysaur-logo-FB8D9A5B96-seeklogo.com.png">
-             </div>
-
-        </li>
-        
-        <li class="pokemon">
-            <span class="number">#003</span>
-            <span class="name">Venosauro</span>
-    
-    
-             <div class="detail">
-                 <ol class="types">
-                     <li class="type">Grama</li>
-                     <li class="type">Poder</li>
-                 </ol>
-    
-    
-                <img src="./assets/fotos/veunu.png">
-             </div>
-            
-           
-        </li>
-        
-
-         <li class="pokemon">
-            <span class="number">#004</span>
-            <span class="name">Charmander</span>
-    
-    
-             <div class="detail">
-                 <ol class="types">
-                       <li class="type">Grama</li>
-                       <li class="type">Poder</li>
-                  </ol>
-    
-    
-                <img src="./assets/fotos/f295769d9bd3c34ffc552e837f5304ae.png">
-            </div>
-            
-        </li>
-
-
-        <li class="pokemon">
-            <span class="number">#005</span>
-            <span class="name">Charmeleon</span>
-    
-    
-             <div class="detail">
-                 <ol class="types">
-                       <li class="type">Grama</li>
-                       <li class="type">Poder</li>
-                  </ol>
-    
-    
-                  <img src="./assets/fotos/Charmeleon-Pokemon-PNG-Image.png">
-           
-        </li>
-        <li class="pokemon">
-            <span class="number">#006</span>
-            <span class="name">Charizard</span>
-    
-    
-             <div class="detail">
-                 <ol class="types">
-                       <li class="type">Grama</li>
-                       <li class="type">Poder</li>
-                  </ol>
-    
-    
-                  <img src="./assets/fotos/charizard-logo-C9856A6142-seeklogo.com.png">
-           
-        </li>
-        
-    </ol>
-
-
-   </section>
-    
-
-
-
-
-
-    
-    <!--Import do Js-->
+    <!-- Nosso JS -->
+    <script src="/assets/js/pokemonmodelo.js"></script>
+    <script src="/assets/js/pokeapi.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
